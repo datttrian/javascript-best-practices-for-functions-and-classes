@@ -1,0 +1,27 @@
+{
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "GitHub.github-vscode-theme",
+    "oderwat.indent-rainbow",
+    "rvest.vs-code-prettier-eslint",
+    "ritwickdey.LiveServer",
+    "sburg.vscode-javascript-booster",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint",
+    "TabNine.tabnine-vscode",
+    "Tyriar.sort-lines",
+    "vincaslt.highlight-matching-tag",
+    "vsicons-team.vscode-icons",
+    "wix.vscode-import-cost",
+    "xabikos.JavaScriptSnippets",
+    "ZainChen.json"
+    // Additional Extensions Here
+  ],
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
+  "postAttachCommand": "git pull --all"
+}
+
+// DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference

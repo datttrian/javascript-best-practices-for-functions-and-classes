@@ -1,0 +1,12 @@
+{
+  "name": "javascript-best-practices-for-functions-and-classes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/datttrian/javascript-best-practices-for-functions-and-classes",
+  "author": "Dat T. Tran <datttrian@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.47.0"
+  }
+}
