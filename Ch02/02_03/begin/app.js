@@ -1,15 +1,17 @@
-'use strict';
+"use strict";
 
 const bonusResult = (input) => {
-  if (input <= 100) { 
-    input = 100
+  let result;
+  if (input <= 100) {
+    result = 100;
   } else if (input > 100 && input < 500) {
-    input = input * 1.5;
+    result = input * 1.5;
   } else if (input >= 500) {
-    input = input * 2;
+    result = input * 2;
   }
-  return input;
-}
+  const difference = result - input;
+  return [result, difference];
+};
 
 console.log(bonusResult(50));
 console.log(bonusResult(150));
