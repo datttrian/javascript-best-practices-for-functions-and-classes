@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-const loggedInUser = 'sashavodnik';
+const loggedInUser = "sashavodnik";
 const taxRate = 0.075;
 
 class Cart {
@@ -26,10 +26,11 @@ class Cart {
     return this;
   }
   logCart() {
-    const that = this;
-    return function() {
-      console.log(that);
-    };
+    // const that = this;
+    // return function() {
+    //   console.log(that);
+    // };
+    console.log(this);
   }
 }
 
@@ -38,9 +39,6 @@ const currentCart = new Cart({
 });
 
 currentCart.total = 100;
-currentCart
-  .calcTax(taxRate)
-  .calcShipping()
-  .calcGrandTotal();
+currentCart.calcTax(taxRate).calcShipping().calcGrandTotal();
 
-window.addEventListener('load', currentCart.logCart());
+window.addEventListener("load", currentCart.logCart.bind(currentCart));
