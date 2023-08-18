@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-const loggedInUser = 'sashavodnik';
+const loggedInUser = "sashavodnik";
 
-class cart {
+class Cart {
   constructor(options) {
     this.user = options.user;
   }
 }
 
-const currentCart = new cart({
+const currentCart = new Cart({
   user: loggedInUser,
 });
 
