@@ -1,18 +1,17 @@
-'use strict';
+"use strict";
 
 const values = [16, 7, 55];
-function projection(array, result = 0) {
-  const max = array.reduce(function(a, b) {
-    return Math.max(a, b);
-  });
+const projection = (array) => {
+  let outcome;
+  const max = array.reduce((a, b) => Math.max(a, b));
   if (max < 10) {
-    result = 'Poor';
+    outcome = "Poor";
   } else if (max < 100) {
-    result = 'Fair';
+    outcome = "Fair";
   } else {
-    result = 'Good';
+    outcome = "Good";
   }
-  return result;
+  return outcome;
 };
 
 console.log(projection(values));
